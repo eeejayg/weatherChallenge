@@ -1,9 +1,35 @@
-h3 {
+h4 {
+  display:block;
+  position:relative;
+  float: left;
+  clear:both;
   font-style: italic;
 }
 
 body {
   font-family: sans-serif;
+}
+
+.quoteContainer {
+  position: relative;
+  display: block;
+  float: left;
+  clear: left;
+  width: 90%;
+  border: 1px solid black;
+  padding: 20px;
+  margin-bottom: 4px;
+}
+
+.quote {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.attribution {
+  margin-top: 10px;
+  font-weight: bold;
 }
 
 .dayContainer {

@@ -10,13 +10,17 @@
 </head>
 
 <body>
-  <h3>Seattle forecast with data provided by Dark Sky</h3>
+  <div class="quoteContainer">
+    <div class="quote">&ldquo;{{ quote }}&rdquo;</div>
+    <div class="attribution">&ndash; {{ attribution }}</div>
+  </div>
   <span ng-repeat="weatherDayItem in data.daily.data">
         <weather-tile
           weather-day-item="weatherDayItem"
         >
       </weather-tile>
   </span>
+  <h4>Seattle forecast with data provided by Dark Sky</h4>
 </body>
 
 </html>

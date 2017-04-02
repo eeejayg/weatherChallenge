@@ -15,9 +15,5 @@ angular.module('modules.weatherTile', [
     })
 
     .controller('weatherTileController', function($scope) {
-
       $scope.weatherDate = new Date($scope.weatherDayItem.time * 1000);
-      console.log($scope.weatherDayItem);
-      console.log("");
-
     });
