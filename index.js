@@ -13,20 +13,21 @@ app.get('/weather', function (req, res) {
         // Send the error if there's an error or the response data if not
         res.send(error || body);
     });
-})
+});
 
 app.get('/json', function(req, res) {
     res.send({
         weather: 'sunny',
         temp: 51
     });
-})
+});
 
 app.get('*', function(req, res) {
     //res.sendFile( __dirname + "/" + "index.html" );
     res.sendFile("./public/index.html");
-})
+});
 
-app.listen(1234, function () {
-  console.log('Example app listening on port 1234!')
-})
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
+
