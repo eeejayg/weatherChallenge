@@ -3,6 +3,7 @@ var app = express();
 var request = require('request');
 
 app.use(express.static(__dirname + '/public'));
+app.set('port', (process.env.PORT || 5000));
 
 // Define localhost:3000/weather endpoint.
 app.get('/weather', function (req, res) {
