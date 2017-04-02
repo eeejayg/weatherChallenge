@@ -27,6 +27,6 @@ app.get('*', function(req, res) {
     res.sendFile("./public/index.html");
 })
 
-app.listen(1234, function () {
-  console.log('Example app listening on port 1234!')
+app.listen(80, function () {
+  console.log('Example app listening on port 80!')
 })
