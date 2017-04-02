@@ -1,7 +1,42 @@
 h3 {
-  color: blue;
+  font-style: italic;
 }
 
 body {
   font-family: sans-serif;
+}
+
+.dayContainer {
+  position: relative;
+  display: block;
+  float: left;
+  clear: none;
+  width:180px;
+  border: 2px solid black;
+  text-align: center;
+  margin-right: 2px;
+  margin-top: 2px;
+  height: 180px;
+}
+
+.dateContainer {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+}
+
+.summaryContainer {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  top: 130px;
+  text-align: left;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  font-style: italic;
+  padding: 4px;
+  padding-left: 8px;
+  padding-top: 8px;
 }

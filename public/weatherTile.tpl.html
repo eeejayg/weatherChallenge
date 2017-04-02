@@ -1,4 +1,5 @@
-<div>
-  <span>weather tile: {{ weatherDayItem.summary }}</span>
+<div class="dayContainer">
+  <div class="dateContainer">{{ weatherDate | date:'EEE, MMM dd'}}</div>
   <img ng-src="images/{{weatherDayItem.icon}}.png" />
+  <div class="summaryContainer">{{ weatherDayItem.summary }}</div>
 </div>
