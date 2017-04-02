@@ -27,7 +27,7 @@ app.get('*', function(req, res) {
     res.sendFile("./public/index.html");
 });
 
-app.listen(app.get('port'), function() {
+app.listen(app.get('port') || 8080, function() {
   console.log('Node app is running on port', app.get('port'));
 });
 
