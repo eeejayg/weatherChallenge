@@ -15,14 +15,17 @@ body {
   display: block;
   float: left;
   clear: left;
-  width: 90%;
+  width: calc(100% - 40px);
   border: 1px solid black;
   padding: 20px;
   margin-bottom: 4px;
+  background-color: black;
 }
 
 .quote {
   font-style: italic;
+  font-weight: bold;
+  color: white;
   font-size: 18px;
   line-height: 25px;
 }
@@ -30,6 +33,7 @@ body {
 .attribution {
   margin-top: 10px;
   font-weight: bold;
+  color: white;
 }
 
 .dayContainer {
